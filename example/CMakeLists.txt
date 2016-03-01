@@ -13,8 +13,11 @@ target_link_libraries(chatter ${OPENSPLICE_LIBRARIES})
 add_executable(messageboard cpp/src/MessageBoard.cpp cpp/src/multitopic.cpp cpp/src/CheckStatus.cpp)
 target_link_libraries(messageboard ${OPENSPLICE_LIBRARIES})
 
-add_executable(userload cpp/src/UserLoad.cpp cpp/src/CheckStatus.cpp)
-target_link_libraries(userload ${OPENSPLICE_LIBRARIES})
+#add_executable(userload cpp/src/UserLoad.cpp cpp/src/CheckStatus.cpp)
+#target_link_libraries(userload ${OPENSPLICE_LIBRARIES})
 
 add_executable(discovery cpp/src/Discovery.cpp cpp/src/CheckStatus.cpp)
 target_link_libraries(discovery ${OPENSPLICE_LIBRARIES})
+
+add_executable(rosnode_list cpp/src/rosnode_list.cpp cpp/src/CheckStatus.cpp)
+target_link_libraries(rosnode_list ${OPENSPLICE_LIBRARIES})
